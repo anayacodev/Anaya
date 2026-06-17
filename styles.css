@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff7f0;
+  color: #4b2e2e;
+}
+
+/* Top Header */
+header {
+  background: linear-gradient(135deg, #ffb6c1, #ffd6a5);
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 6px solid #ff8fab;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  color: #7a2e3a;
+  text-shadow: 3px 3px #fff1f5;
+}
+
+header p {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #7a2e3a;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffd6a5;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #7a2e3a;
+}
+
+/* About Box */
+.about {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #d94f70;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #b83f5c;
+}
+
+/* Photo Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background-color: #ffe5ec;
+}
+
+.card-content {
+  padding: 18px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  color: #7a2e3a;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #d94f70;
+}
+
+/* Menu Section */
+.menu-list {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: auto;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #d94f70;
+  padding: 14px 0;
+  font-size: 18px;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #7a2e3a;
+  color: white;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+/* Phone Screen Styling */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 50px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
