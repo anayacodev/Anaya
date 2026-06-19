@@ -164,9 +164,22 @@ section {
 .menu-item {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   border-bottom: 1px dashed #d94f70;
   padding: 14px 0;
   font-size: 18px;
+  gap: 18px;
+}
+
+.menu-item div {
+  max-width: 70%;
+}
+
+.menu-caption {
+  margin-top: 6px;
+  color: #7a2e3a;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 .menu-item:last-child {
