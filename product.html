@@ -24,7 +24,8 @@
     <a href="index.html#gallery">Photos</a>
     <a href="index.html#menu">Menu</a>
     <a href="product.html">Product</a>
-  </nav>
+      <a href="cart.html">Cart <span class="cart-count">0</span></a>
+
 
   <section class="product-detail">
     <h2 class="section-title">Product Detail</h2>
@@ -52,8 +53,11 @@
         </div>
 
         <div class="product-order">
-          <p><strong>Order now:</strong> Available for pickup in California.</p>
-          <a class="button" href="index.html#menu">Back to Menu</a>
+          <label class="product-quantity-label">Quantity
+            <input id="product-quantity" type="number" min="1" value="1">
+          </label>
+          <button id="add-to-cart-btn" class="button" type="button" data-slug="vanilla-lava-cupcakes" data-title="Vanilla Lava Cupcakes" data-price="18 per dozen">Add to Cart</button>
+          <div id="cart-message" class="cart-message"></div>
         </div>
       </div>
     </div>
@@ -64,5 +68,6 @@
     <p>Homemade treats for every sweet tooth</p>
   </footer>
 
+  <script src="scripts.js"></script>
 </body>
 </html>

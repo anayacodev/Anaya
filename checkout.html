@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Anaya's Baking Company</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Anaya's Baking Company</h1>
+    <p>A Kid Owned Baking Business</p>
+  </header>
+
+  <nav>
+    <a href="index.html#about">About</a>
+    <a href="index.html#gallery">Photos</a>
+    <a href="index.html#menu">Menu</a>
+    <a href="cart.html">Cart <span class="cart-count">0</span></a>
+  </nav>
+
+  <section id="checkout-page" class="product-detail">
+    <h2 class="section-title">Checkout</h2>
+
+    <div class="checkout-grid">
+      <div class="checkout-summary" id="checkout-summary"></div>
+
+      <form id="checkout-form" class="checkout-form">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          Pickup date
+          <input type="date" name="pickup" required>
+        </label>
+
+        <button class="button" type="submit">Place Order</button>
+      </form>
+
+      <div id="checkout-complete" class="checkout-complete"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Anaya Baking Company</p>
+    <p>Homemade treats for every sweet tooth</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

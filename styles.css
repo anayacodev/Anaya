@@ -108,6 +108,12 @@ section {
   background-color: #b83f5c;
 }
 
+.button[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* Photo Gallery */
 .gallery {
   display: grid;
@@ -185,6 +191,152 @@ section {
 .product-order p {
   margin-bottom: 16px;
   font-size: 16px;
+}
+
+.product-quantity-label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.product-quantity-label input {
+  width: 90px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid #d94f70;
+  margin-top: 8px;
+}
+
+.cart-message {
+  margin-top: 14px;
+  color: #7a2e3a;
+  font-size: 16px;
+  min-height: 24px;
+  opacity: 0;
+}
+
+.message-visible {
+  opacity: 1;
+}
+
+.cart-content {
+  display: grid;
+  gap: 24px;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 30px;
+  border: 2px dashed #d94f70;
+  border-radius: 20px;
+  background: #fff7f0;
+  color: #7a2e3a;
+}
+
+#cart-table {
+  display: grid;
+  gap: 20px;
+}
+
+.cart-item {
+  background: #fff7f0;
+  border-radius: 18px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+}
+
+.cart-name {
+  display: grid;
+  gap: 6px;
+}
+
+.cart-name span {
+  color: #7a2e3a;
+  font-size: 14px;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cart-actions input {
+  width: 65px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid #d94f70;
+}
+
+.button-small {
+  padding: 10px 16px;
+  border-radius: 18px;
+  font-size: 14px;
+}
+
+.cart-subtotal {
+  font-weight: 700;
+  color: #d94f70;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background: #fff7f0;
+  border-radius: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #7a2e3a;
+}
+
+.checkout-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.checkout-summary,
+.checkout-complete {
+  background: #fff7f0;
+  border-radius: 20px;
+  padding: 28px;
+  color: #4b2e2e;
+}
+
+.checkout-form {
+  display: grid;
+  gap: 18px;
+}
+
+.checkout-form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.checkout-form input {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid #d94f70;
+  width: 100%;
+}
+
+.checkout-complete h3 {
+  margin-bottom: 16px;
+}
+
+.message-visible {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+#cart-page .button,
+#checkout-page .button {
+  width: fit-content;
 }
 
 .card:hover {
