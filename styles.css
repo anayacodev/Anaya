@@ -175,15 +175,6 @@ section {
   max-width: 70%;
 }
 
-.menu-caption {
-  margin-top: 6px;
-  color: #b83f5c;
-  font-family: 'Pacifico', cursive;
-  font-size: 15px;
-  line-height: 1.4;
-  font-style: italic;
-}
-
 .menu-item:last-child {
   border-bottom: none;
 }
